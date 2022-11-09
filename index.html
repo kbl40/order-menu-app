@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Font Awesome CDN -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>Jimmy's Diner</h1>
+                <p>The best burgers and pizza in town.</p>
+            </div>
+        </header>
+        <main>
+            <div class="order-input-area" id="order-input-area">
+                <!--Build inputs here using Javascript-->
+            </div>
+            <div class="order-summary-area" id="order-summary-area">
+                <!--Build output here using Javascript-->
+            </div>
+        </main>
+        <div class="modal" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <h2 class="modal-title">Enter card details</h2>
+                <form id="order-form" class="order-form">
+                    <input type="text" name="fullName" placeholder="Enter your name" required />
+                    <input type="number" name="creditCard" placeholder="Enter card number" required />
+                    <input type="number" name="cvv" placeholder="Enter CVV" required />
+                    <textarea id="special-request" placeholder="Enter any special requests"></textarea>
+                    <div>
+                        <button type="submit" class="modal-btn">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
